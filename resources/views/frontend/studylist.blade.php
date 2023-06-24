@@ -227,13 +227,13 @@
                     </div>
                     <div class="dragArea row">
                         <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3" data-for="name">
-                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-form7-1q">
+                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-form7-1q" maxlength="30" required>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3" data-for="email">
-                            <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control" value="" id="email-form7-1q">
+                            <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control" value="" id="email-form7-1q"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required maxlength="50">
                         </div>
                         <div data-for="phone" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
-                            <input type="tel" name="phone" placeholder="Phone" data-form-field="phone" class="form-control" value="" id="phone-form7-1q">
+                            <input type="tel" name="phone" placeholder="Phone" data-form-field="phone" class="form-control" value="" id="phone-form7-1q" pattern="[789][0-9]{9}" required  maxlength="10">
                         </div>
                         <div class="col-auto mbr-section-btn align-center"><button type="submit" class="btn btn-primary display-4">Submit</button></div>
                     </div>

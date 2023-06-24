@@ -19,7 +19,7 @@
                     <div class="text-box">
                         <h4 class="icon-title card-title mbr-black mbr-fonts-style display-2"><strong>Previous Year Question Papers&nbsp;</strong></h4>
                         <h5 class="icon-text mbr-black mbr-fonts-style display-7">We have more than 100 papers of previous 5 years. So ,don't worry if your exams are coming near. we have everything ready for you&nbsp;</h5>
-                        <div class="mbr-section-btn"><a class="btn btn-success display-4" href="{{url('/Papers#tabs1-2d')}}">Download now</a></div>
+                        <div class="mbr-section-btn"><a class="btn btn-success display-4" href="{{url('/Papers-files#tabs1-2d')}}">Download now</a></div>
                     </div>
                 </div>
 

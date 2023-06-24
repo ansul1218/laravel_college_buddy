@@ -1,15 +1,133 @@
 
-@extends('frontend.layouts.main')
-@section('main-container')
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="{{url('public/frontend/assets/images/mbr-121x121.png')}}" type="image/x-icon">
+    <meta name="description" content="">
+
+
+    <title>Home</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8564026529063912"
+        crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{{ url('/resources/js/app.js') }}">
+    <link rel="stylesheet" href="{{ url('frontend/assets/web/assets/mobirise-icons2/mobirise2.css') }}">
+    <link rel="stylesheet" href="{{ url('frontend/assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url('frontend/assets/bootstrap/css/bootstrap-grid.min.css') }}">
+    <link rel="stylesheet" href="{{ url('frontend/assets/bootstrap/css/bootstrap-reboot.min.css') }}">
+    <link rel="stylesheet" href="{{ url('frontend/assets/parallax/jarallax.css') }}">
+    <link rel="stylesheet" href="{{ url('frontend/assets/web/assets/gdpr-plugin/gdpr-styles.css') }}">
+    <link rel="stylesheet" href="{{ url('frontend/assets/socicon/css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url('frontend/assets/dropdown/css/style.css') }}">
+    <link rel="stylesheet" href="{{ url('frontend/assets/theme/css/style.css') }}">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+    </noscript>
+    <link rel="preload" as="style" href="{{ url('frontend/assets/mobirise/css/mbr-additional.css') }}">
+    <link rel="stylesheet" href="{{ url('frontend/assets/mobirise/css/mbr-additional.css') }}" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+
+
+</head>
+
+<body onload=" filterTable1('English', 1, document.getElementById('english-tab'));filterTable2('Business communication', 2, document.getElementById('Business_communication-tab'));filterTable3('C++', 3, document.getElementById('C++-tab'));filterTable4('DBMS', 4, document.getElementById('DBMS-tab'));filterTable5('Computer Networks', 5, document.getElementById('networks-tab'));filterTable6('Distributed Operating System', 6, document.getElementById('dos-tab'));filterTable7('Advance Computer Architecture', 7, document.getElementById('aca-tab'))" >
+    <section data-bs-version="5.1" class="menu cid-s48OLK6784" once="menu" id="menu1-h">
+
+        <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+            <div class="container">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="{{url('/')}}">
+                            <img src="{{ url('frontend/assets/images/mbr-121x121.png') }}" alt="BTech Buddy logo"
+                                style="height: 3.8rem;">
+                        </a>
+                    </span>
+                    <span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-7"
+                            href="/">BTech Buddy</a></span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
+                    data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                        <li class="nav-item"><a class="nav-link link text-black text-primary display-4"
+                                href="{{url('/')}}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link link text-black text-primary display-4"
+                                href="{{url('/Studylist')}}">Study list</a></li>
+                        <li class="nav-item"><a class="nav-link link text-black text-primary display-4"
+                                href="{{url('/Books')}}">Books</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle display-4"
+                                href="{{url('/Note')}}" data-toggle="dropdown-submenu" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" aria-expanded="false">Notes</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-529"><a
+                                    class="text-black dropdown-item text-primary display-4"
+                                    href="{{url('/Notes-files#tabs1-11')}}">Semester I</a><a
+                                    class="text-black show dropdown-item text-primary display-4"
+                                    href="{{url('/Notes-files#tabs1-12')}}">Semester II</a><a
+                                    class="text-black show dropdown-item text-primary display-4"
+                                    href="{{url('/Notes-files#tabs1-13')}}">Semester III</a><a
+                                    class="text-black show dropdown-item text-primary display-4"
+                                    href="{{url('/Notes-files#tabs1-14')}}">Semester IV</a><a
+                                    class="text-black show dropdown-item text-primary display-4"
+                                    href="{{url('/Notes-files#tabs1-15')}}">Semester V</a><a
+                                    class="text-black show dropdown-item text-primary display-4"
+                                    href="{{url('/Notes-files#tabs1-16')}}">Semester VI</a><a
+                                    class="text-black show dropdown-item text-primary display-4"
+                                    href="{{url('/Notes-files#tabs1-17')}}">Semester VII</a></div>
+                        </li>
+                        <li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle display-4"
+                                href="{{url('/Paper')}}" data-toggle="dropdown-submenu" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" aria-expanded="false">Papers</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-247"><a
+                                    class="text-black dropdown-item text-primary display-4"
+                                    href="{{url('/Papers-files#tabs1-21')}}">Semester I</a><a
+                                    class="text-black show dropdown-item text-primary display-4"
+                                    href="{{url('/Papers-files#tabs1-22')}}">Semester II</a><a
+                                    class="text-black show dropdown-item text-primary display-4"
+                                    href="{{url('/Papers-files#tabs1-23')}}">Semester III</a><a
+                                    class="text-black show dropdown-item text-primary display-4"
+                                    href="{{url('/Papers-files#tabs1-24')}}">Semester IV</a><a
+                                    class="text-black show dropdown-item text-primary display-4"
+                                    href="{{url('/Papers-files#tabs1-25')}}">Semester V</a><a
+                                    class="text-black show dropdown-item text-primary display-4"
+                                    href="{{url('/Papers-files#tabs1-26')}}">Semester VI</a><a
+                                    class="text-black show dropdown-item text-primary display-4"
+                                    href="{{url('/Papers-files#tabs1-27')}}">Semester VII</a></div>
+                        </li>
+                    </ul>
+
+                    <div class="navbar-buttons mbr-section-btn"><a class="btn btn-success display-4"
+                            href="{{url('/#form1-q')}}">Join Now</a></div>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+
+
 
 <link rel="stylesheet" href="{{ url('frontend/css/style.css')}}">
-<link href="{{ url('frontend/assets/dist/css/tabulator_bootstrap5.min.css')}}" rel="stylesheet">
 
-<section data-bs-version="5.1" class="tabs content18 cid-tET2eV8bEP" id="tabs1-1s">
-
-
-
-
+<section data-bs-version="5.1" class="tabs content18 cid-tET2eV8bEP" id="tabs1-11" >
 
     <div class="container">
         <div class="row justify-content-center">
@@ -20,272 +138,97 @@
         </div>
         <div class="row justify-content-center mt-4">
             <div class="col-12 col-md-8">
-              <script>
-                function openSubject(evt, subjectName) {
-                    // Declare all variables
-                    var i, tabcontent, tablinks;
 
-                    // Get all elements with class="tabcontent" and hide them
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
 
-                    // Get all elements with class="tablinks" and remove the class "active"
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
+                <script> src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-                    // Show the current tab, and add an "active" class to the button that opened the tab
-                    document.getElementById(subjectName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                    }
-              </script>
-              <!-- Tab links -->
-
+                <div id="filter-container1"  >
                     <div class="tab">
-                        <button class="tablinks active" onclick="openSubject(event, 'sem1_english_notes')">English</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem1_math_notes')">Engineering Math I</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem1_physics_notes')">Physics</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem1_mechanics_notes')">Mechanics</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem1_c_notes')">C++</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem1_ed_notes')">Engineering Drawing</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem1_environment_notes')">Environmental science</button>
+
+                        <button id="english-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable1('English', 1, this)">English</button>
+                        <button id="math-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable1('Math', 1, this)">Math</button>
+                        <button id="physics-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable1('Physics', 1, this)">Physics</button>
+                        <button id="mechanics-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable1('Mechanics', 1, this)">Mechanics</button>
+                        <button id="c++-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable1('c++', 1, this)">C++</button>
+                        <button id="ed-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable1('ed', 1, this)">Engineering Drawing</button>
+                        <button id="environmentscience-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable1('enivornment', 1, this)">environment sciences</button>
                     </div>
+                </div>
 
-                    <!-- Tab content -->
-                    <div id="sem1_english_notes" class="tabcontent" style="display:block;">
+                    <table id="notes-table1" class="table table-hover table-responsive">
+                        <thead>
+                            <tr>
+                                <th>File Name</th>
+                                <th class="d-none">Department</th>
+                                <th class="d-none">Semester</th>
+                                <th >Subject</th>
+                                <th>View</th>
+                                <th>Download</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($notes as $note)
+                                <tr>
+                                    <td data-label="File Name">{{ $note->file_name }}</td>
+                                    <td data-label="Department" class="d-none">{{ $note->department }}</td>
+                                    <td data-label="Semester" class="d-none">{{ $note->semester }}</td>
+                                    <td data-label="Subject" >{{ $note->subject }}</td>
+                                    <td data-label="view">
+                                        <a href="{{ url($note->file_path) }}" target="_blank" class="btn btn-success display-4 " style="white-space: nowrap;">view</a>
+                                    </td>
+                                    <td data-label="download">
+                                        <a href="{{ url($note->file_path) }}" download="{{ $note->file_name }}" class="btn btn-success display-4" style="white-space: nowrap;">Download</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
 
-                       <script> //define some CSV data
-                            var csvData = `"noun", "26/11/2022","https://onedrive.live.com/download?cid=03999F44519E668E&resid=3999F44519E668E%21102&authkey=AOdM-qPgxc0KBLQ&em=2"
-                             "pronnoun", "20/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "verb", "27/12/2022","gs://btechbuddy-c10dc.appspot.com/cs 703 notes 3.pdf"`;
+                    <script>
+                        function filterTable1(subject, semester, currentTab) {
+                            var table = document.getElementById("notes-table1");
+                            var rows = table.getElementsByTagName("tr");
 
-                            //define table
-                            var table = new Tabulator("#sem1_english_notes", {
-                                data:csvData,
+                            for (var i = 1; i < rows.length; i++) {
+                                var row = rows[i];
+                                var cells = row.getElementsByTagName("td");
+                                var noteSubject = cells[3].innerText;
+                                var noteSemester = cells[2].innerText;
 
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
+                                var showRow = true;
 
-                                }}
+                                // Filter by subject
+                                if (subject && noteSubject.toLowerCase() !== subject.toLowerCase()) {
+                                    showRow = false;
+                                }
 
+                                // Filter by semester
+                                if (noteSemester.trim() !== semester.toString()) {
+                                    showRow = false;
+                                }
 
+                                if (showRow) {
+                                    row.style.display = "";
+                                } else {
+                                    row.style.display = "none";
+                                }
+                            }
 
-                                ]
-                            });
-                        </script>
+                            // Set active tab
+                            var tablinks = document.getElementsByClassName("tablinks");
+                            for (var i = 0; i < tablinks.length; i++) {
+                                tablinks[i].classList.remove("active");
+                            }
+                            currentTab.classList.add("active");
+                        }
+                    </script>
 
-                    </div>
-
-                    <div id="sem1_math_notes" class="tabcontent">
-
-                       <script> //define some CSV data
-                            var csvData = `"matrix", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "calculus", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "statistics", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem1_math_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem1_physics_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"chapter 1", "26/09/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "chapter 2", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "book", "26/10/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem1_physics_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
+                </div>
 
 
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem1_mechanics_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"truss", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "bridges", "289/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "force", "30/02/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem1_mechanics_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem1_c_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"classes", "26/10/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "objects", "25/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "basics", "26/12/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem1_c_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem1_ed_notes" class="tabcontent">
-
-                       <script> //define some CSV data
-                            var csvData = `"3d design", "23/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "2d design", "25/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "parallel spaces", "26/11/2023","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem1_ed_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-
-                    <div id="sem1_environment_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                             var csvData = `"3d design", "23/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                              "2d design", "25/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                              "parallel spaces", "26/11/2023","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                             //define table
-                             var table = new Tabulator("#sem1_environment_notes", {
-                                 data:csvData,
-                                 importFormat:"csv",
-                                 layout:"fitColumns",
-                                 responsiveLayout:true,
-                                 columns:[
-                                 {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                 {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                 {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                     labelField:"Download url",
-                                     label: "click here to download",
-                                     download:true,
-                                     target:"_blank",
-
-                                 }}
-
-
-
-                                 ]
-                             });
-                         </script>
-
-                     </div>
-                        </div>
-        </div>
     </div>
 </section>
-
-<section data-bs-version="5.1" class="tabs content18 cid-tET2eV8bEP" id="tabs1-2s">
+<section data-bs-version="5.1" class="tabs content18 cid-tET2eV8bEP" id="tabs1-12">
 
 
 
@@ -300,238 +243,97 @@
         </div>
         <div class="row justify-content-center mt-4">
             <div class="col-12 col-md-8">
-              <script>
-                function openSubject(evt, subjectName) {
-                    // Declare all variables
-                    var i, tabcontent, tablinks;
 
-                    // Get all elements with class="tabcontent" and hide them
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
+                <script> src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-                    // Get all elements with class="tablinks" and remove the class "active"
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-
-                    // Show the current tab, and add an "active" class to the button that opened the tab
-                    document.getElementById(subjectName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                    }
-              </script>
-              <!-- Tab links -->
-
+                <div id="filter-container2"  >
                     <div class="tab">
-                        <button class="tablinks active" onclick="openSubject(event, 'sem2_business_notes')">Business Communication</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem2_math_notes')">Engineering Math II</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem2_chemistry_notes')">Chemistry</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem2_electrical_notes')">Principles of Electrical Engineering</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem2_electronics_notes')">Engineering Electronics</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem2_workshop_notes')">Workshop technology</button>
+
+                        <button id="Business_communication-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable2('Business communication', 2, this)">Business communication</button>
+                        <button id="mathII-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable2('Math', 2, this)">Math II</button>
+                        <button id="Chemistry-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable2('Chemistry', 2, this)">Chemistry</button>
+                        <button id="electrical-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable2('Principle of electrical engineering', 2, this)">Principle of electrical engineering</button>
+                        <button id="disaster-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable2('Disaster management', 2, this)">Disaster Management</button>
+                        <button id="electronics-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable2('engineering electronics', 2, this)">Engineering Electronics</button>
+                        <button id="workshop-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable2('Workshop Technology', 2, this)">Workshop Technology</button>
                     </div>
+                </div>
 
-                    <!-- Tab content -->
-                    <div id="sem2_business_notes" class="tabcontent" style="display:block;">
+                    <table id="notes-table2" class="table table-hover table-responsive">
+                        <thead>
+                            <tr>
+                                <th>File Name</th>
+                                <th class="d-none">Department</th>
+                                <th class="d-none">Semester</th>
+                                <th >Subject</th>
+                                <th>View</th>
+                                <th>Download</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($notes as $note)
+                                <tr>
+                                    <td data-label="File Name">{{ $note->file_name }}</td>
+                                    <td data-label="Department" class="d-none">{{ $note->department }}</td>
+                                    <td data-label="Semester" class="d-none">{{ $note->semester }}</td>
+                                    <td data-label="Subject" >{{ $note->subject }}</td>
+                                    <td data-label="view">
+                                        <a href="{{ url($note->file_path) }}" target="_blank" class="btn btn-success display-4 " style="white-space: nowrap;">view</a>
+                                    </td>
+                                    <td data-label="download">
+                                        <a href="{{ url($note->file_path) }}" download="{{ $note->file_name }}" class="btn btn-success display-4" style="white-space: nowrap;">Download</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
 
-                       <script> //define some CSV data
-                            var csvData = `"noun", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "pronnoun", "20/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "verb", "27/12/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
+                    <script>
+                        function filterTable2(subject, semester, currentTab) {
+                            var table = document.getElementById("notes-table2");
+                            var rows = table.getElementsByTagName("tr");
 
-                            //define table
-                            var table = new Tabulator("#sem2_business_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
+                            for (var i = 1; i < rows.length; i++) {
+                                var row = rows[i];
+                                var cells = row.getElementsByTagName("td");
+                                var noteSubject = cells[3].innerText;
+                                var noteSemester = cells[2].innerText;
 
-                                }}
+                                var showRow = true;
 
+                                // Filter by subject
+                                if (subject && noteSubject.toLowerCase() !== subject.toLowerCase()) {
+                                    showRow = false;
+                                }
 
+                                // Filter by semester
+                                if (noteSemester.trim() !== semester.toString()) {
+                                    showRow = false;
+                                }
 
-                                ]
-                            });
-                        </script>
+                                if (showRow) {
+                                    row.style.display = "";
+                                } else {
+                                    row.style.display = "none";
+                                }
+                            }
 
-                    </div>
+                            // Set active tab
+                            var tablinks = document.getElementsByClassName("tablinks");
+                            for (var i = 0; i < tablinks.length; i++) {
+                                tablinks[i].classList.remove("active");
+                            }
+                            currentTab.classList.add("active");
+                        }
+                    </script>
 
-                    <div id="sem2_math_notes" class="tabcontent">
+                </div>
 
-                       <script> //define some CSV data
-                            var csvData = `"matrix", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "calculus", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "statistics", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem2_math_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem2_chemistry_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"chapter 1", "26/09/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "chapter 2", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "book", "26/10/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem2_chemistry_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem2_electrical_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"truss", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "bridges", "289/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "force", "30/02/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem2_electrical_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem2_electronics_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"classes", "26/10/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "objects", "25/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "basics", "26/12/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem2_electronics_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem2_workshop_notes" class="tabcontent">
-
-                       <script> //define some CSV data
-                            var csvData = `"3d design", "23/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "2d design", "25/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "parallel spaces", "26/11/2023","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem2_workshop_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                        </div>
         </div>
     </div>
 </section>
 
-<section data-bs-version="5.1" class="tabs content18 cid-tET2eV8bEP" id="tabs1-3s">
+<section data-bs-version="5.1" class="tabs content18 cid-tET2eV8bEP" id="tabs1-13">
 
 
 
@@ -545,239 +347,97 @@
             </div>
         </div>
         <div class="row justify-content-center mt-4">
-            <div class="col-12 col-md-8">
-              <script>
-                function openSubject(evt, subjectName) {
-                    // Declare all variables
-                    var i, tabcontent, tablinks;
+                <div div class="col-12 col-md-8">
 
-                    // Get all elements with class="tabcontent" and hide them
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
+                    <script> src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-                    // Get all elements with class="tablinks" and remove the class "active"
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
+                    <div id="filter-container3"  >
+                        <div class="tab">
 
-                    // Show the current tab, and add an "active" class to the button that opened the tab
-                    document.getElementById(subjectName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                    }
-              </script>
-              <!-- Tab links -->
-
-                    <div class="tab">
-                        <button class="tablinks active" onclick="openSubject(event, 'sem3_c_notes')">C++</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem3_math_notes')">Probability & statistics</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem3_economics_notes')">Economics</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem3_data_structures_notes')">Data structures</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem3_digital_electronics_notes')">Digital electronics</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem3_coa_notes')">Computer Organisation and Architecture</button>
+                            <button id="C++-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable3('C++', 3, this)">C++</button>
+                            <button id="mathIII-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable3('Probability & statistics', 3, this)">Probability & statistics</button>
+                            <button id="Economics-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable3('Economics', 3, this)">Economics</button>
+                            <button id="datastructure-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable3('Data Structure', 3, this)">Data Structure</button>
+                            <button id="coa-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable3('Computer Organisation and Architecture', 3, this)">Computer Organisation and Architecture</button>
+                            <button id="digital_electronics-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable3('Digital Electronics', 3, this)">Digital Electronics</button>
+                            <button id="Sociology-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable3('Sociology', 3, this)">Sociology</button>
+                        </div>
                     </div>
 
-                    <!-- Tab content -->
-                    <div id="sem3_c_notes" class="tabcontent" style="display:block;">
+                        <table id="notes-table3" class="table table-hover table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>File Name</th>
+                                    <th class="d-none">Department</th>
+                                    <th class="d-none">Semester</th>
+                                    <th >Subject</th>
+                                    <th>View</th>
+                                    <th>Download</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($notes as $note)
+                                    <tr>
+                                        <td data-label="File Name">{{ $note->file_name }}</td>
+                                        <td data-label="Department" class="d-none">{{ $note->department }}</td>
+                                        <td data-label="Semester" class="d-none">{{ $note->semester }}</td>
+                                        <td data-label="Subject" >{{ $note->subject }}</td>
+                                        <td data-label="view">
+                                            <a href="{{ url($note->file_path) }}" target="_blank" class="btn btn-success display-4 " style="white-space: nowrap;">view</a>
+                                        </td>
+                                        <td data-label="download">
+                                            <a href="{{ url($note->file_path) }}" download="{{ $note->file_name }}" class="btn btn-success display-4" style="white-space: nowrap;">Download</a>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
 
-                       <script> //define some CSV data
-                            var csvData = `"noun", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "pronnoun", "20/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "verb", "27/12/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
+                        <script>
+                            function filterTable3(subject, semester, currentTab) {
+                                var table = document.getElementById("notes-table3");
+                                var rows = table.getElementsByTagName("tr");
 
-                            //define table
-                            var table = new Tabulator("#sem3_c_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
+                                for (var i = 1; i < rows.length; i++) {
+                                    var row = rows[i];
+                                    var cells = row.getElementsByTagName("td");
+                                    var noteSubject = cells[3].innerText;
+                                    var noteSemester = cells[2].innerText;
 
-                                }}
+                                    var showRow = true;
 
+                                    // Filter by subject
+                                    if (subject && noteSubject.toLowerCase() !== subject.toLowerCase()) {
+                                        showRow = false;
+                                    }
 
+                                    // Filter by semester
+                                    if (noteSemester.trim() !== semester.toString()) {
+                                        showRow = false;
+                                    }
 
-                                ]
-                            });
+                                    if (showRow) {
+                                        row.style.display = "";
+                                    } else {
+                                        row.style.display = "none";
+                                    }
+                                }
+
+                                // Set active tab
+                                var tablinks = document.getElementsByClassName("tablinks");
+                                for (var i = 0; i < tablinks.length; i++) {
+                                    tablinks[i].classList.remove("active");
+                                }
+                                currentTab.classList.add("active");
+                            }
                         </script>
-
-                    </div>
-
-                    <div id="sem3_math_notes" class="tabcontent">
-
-                       <script> //define some CSV data
-                            var csvData = `"matrix", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "calculus", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "statistics", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem3_math_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem3_economics_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"chapter 1", "26/09/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "chapter 2", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "book", "26/10/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem3_economics_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem3_data_structures_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"truss", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "bridges", "289/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "force", "30/02/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem3_data_structures_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem3_digital_electronics_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"classes", "26/10/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "objects", "25/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "basics", "26/12/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem3_digital_electronics_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem3_coa_notes" class="tabcontent">
-
-                       <script> //define some CSV data
-                            var csvData = `"3d design", "23/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "2d design", "25/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "parallel spaces", "26/11/2023","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem3_coa_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
 
                         </div>
         </div>
     </div>
 </section>
 
-<section data-bs-version="5.1" class="tabs content18 cid-tET2eV8bEP" id="tabs1-4s">
+<section data-bs-version="5.1" class="tabs content18 cid-tET2eV8bEP" id="tabs1-14">
 
 
 
@@ -791,239 +451,96 @@
             </div>
         </div>
         <div class="row justify-content-center mt-4">
-            <div class="col-12 col-md-8">
-              <script>
-                function openSubject(evt, subjectName) {
-                    // Declare all variables
-                    var i, tabcontent, tablinks;
+            <div div class="col-12 col-md-8">
 
-                    // Get all elements with class="tabcontent" and hide them
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
+                <script> src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-                    // Get all elements with class="tablinks" and remove the class "active"
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-
-                    // Show the current tab, and add an "active" class to the button that opened the tab
-                    document.getElementById(subjectName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                    }
-              </script>
-              <!-- Tab links -->
-
+                <div id="filter-container4"  >
                     <div class="tab">
-                        <button class="tablinks active" onclick="openSubject(event, 'sem4_human_values_notes')">Human Values</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem4_math_notes')">Optimization And Calculus</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem4_dbms_notes')">DBMS</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem4_os_notes')">Operating Systems</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem4_toc_notes')">Theory of Computation</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem4_microprocessors_notes')">Microprocessors and periferals</button>
+
+                        <button id="DBMS-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable4('DBMS', 4, this)">DBMS</button>
+                        <button id="mathIV-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable4('Optimisation And Calculus', 4, this)">Optimisation And Calculus</button>
+                        <button id="os-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable4('Operating System', 4, this)">Operating System</button>
+                        <button id="toc-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable4('Theory Of Computation', 4, this)">Theory Of Computation</button>
+                        <button id="microprocessors-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable4('Microprcessors And Periferals', 4, this)">Microprcessors And Periferals</button>
+                        <button id="human_values-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable4('Human Values', 4, this)">Human Values</button>
                     </div>
+                </div>
 
-                    <!-- Tab content -->
-                    <div id="sem4_human_values_notes" class="tabcontent" style="display:block;">
+                    <table id="notes-table4" class="table table-hover table-responsive">
+                        <thead>
+                            <tr>
+                                <th>File Name</th>
+                                <th class="d-none">Department</th>
+                                <th class="d-none">Semester</th>
+                                <th >Subject</th>
+                                <th>View</th>
+                                <th>Download</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($notes as $note)
+                                <tr>
+                                    <td data-label="File Name">{{ $note->file_name }}</td>
+                                    <td data-label="Department" class="d-none">{{ $note->department }}</td>
+                                    <td data-label="Semester" class="d-none">{{ $note->semester }}</td>
+                                    <td data-label="Subject" >{{ $note->subject }}</td>
+                                    <td data-label="view">
+                                        <a href="{{ url($note->file_path) }}" target="_blank" class="btn btn-success display-4 " style="white-space: nowrap;">view</a>
+                                    </td>
+                                    <td data-label="download">
+                                        <a href="{{ url($note->file_path) }}" download="{{ $note->file_name }}" class="btn btn-success display-4" style="white-space: nowrap;">Download</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
 
-                       <script> //define some CSV data
-                            var csvData = `"noun", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "pronnoun", "20/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "verb", "27/12/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
+                    <script>
+                        function filterTable4(subject, semester, currentTab) {
+                            var table = document.getElementById("notes-table4");
+                            var rows = table.getElementsByTagName("tr");
 
-                            //define table
-                            var table = new Tabulator("#sem4_human_values_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
+                            for (var i = 1; i < rows.length; i++) {
+                                var row = rows[i];
+                                var cells = row.getElementsByTagName("td");
+                                var noteSubject = cells[3].innerText;
+                                var noteSemester = cells[2].innerText;
 
-                                }}
+                                var showRow = true;
 
+                                // Filter by subject
+                                if (subject && noteSubject.toLowerCase() !== subject.toLowerCase()) {
+                                    showRow = false;
+                                }
 
+                                // Filter by semester
+                                if (noteSemester.trim() !== semester.toString()) {
+                                    showRow = false;
+                                }
 
-                                ]
-                            });
-                        </script>
+                                if (showRow) {
+                                    row.style.display = "";
+                                } else {
+                                    row.style.display = "none";
+                                }
+                            }
 
-                    </div>
-
-                    <div id="sem4_math_notes" class="tabcontent">
-
-                       <script> //define some CSV data
-                            var csvData = `"matrix", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "calculus", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "statistics", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem4_math_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem4_dbms_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"chapter 1", "26/09/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "chapter 2", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "book", "26/10/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem4_dbms_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
+                            // Set active tab
+                            var tablinks = document.getElementsByClassName("tablinks");
+                            for (var i = 0; i < tablinks.length; i++) {
+                                tablinks[i].classList.remove("active");
+                            }
+                            currentTab.classList.add("active");
+                        }
+                    </script>
 
                     </div>
-
-                    <div id="sem4_os_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"truss", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "bridges", "289/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "force", "30/02/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem4_os_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem4_toc_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"classes", "26/10/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "objects", "25/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "basics", "26/12/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem4_toc_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem4_microprocessors_notes" class="tabcontent">
-
-                       <script> //define some CSV data
-                            var csvData = `"3d design", "23/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "2d design", "25/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "parallel spaces", "26/11/2023","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem4_microprocessors_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                        </div>
-        </div>
+    </div>
     </div>
 </section>
 
-<section data-bs-version="5.1" class="tabs content18 cid-tET2eV8bEP" id="tabs1-5s">
+<section data-bs-version="5.1" class="tabs content18 cid-tET2eV8bEP" id="tabs1-15">
 
 
 
@@ -1037,239 +554,96 @@
             </div>
         </div>
         <div class="row justify-content-center mt-4">
-            <div class="col-12 col-md-8">
-              <script>
-                function openSubject(evt, subjectName) {
-                    // Declare all variables
-                    var i, tabcontent, tablinks;
+            <div div class="col-12 col-md-8">
 
-                    // Get all elements with class="tabcontent" and hide them
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
+                <script> src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-                    // Get all elements with class="tablinks" and remove the class "active"
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-
-                    // Show the current tab, and add an "active" class to the button that opened the tab
-                    document.getElementById(subjectName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                    }
-              </script>
-              <!-- Tab links -->
-
+                <div id="filter-container5"  >
                     <div class="tab">
-                        <button class="tablinks active" onclick="openSubject(event, 'sem5_networks_notes')">Computer Networks</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem5_java_notes')">Core JAVA</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem5_graphics_notes')">Computer Graphics</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem5_ai_notes')">AI & Expert Systems</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem5_software_engineering_notes')">Software Engineering</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem5_ada_notes')">Analysis and Design of Algorithms</button>
+
+                        <button id="networks-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable5('Computer Networks', 5, this)">Computer Networks</button>
+                        <button id="corejava-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable5('Core JAVA', 5, this)">Core JAVA</button>
+                        <button id="graphics-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable5('Computer Graphics', 5, this)">Computer Graphics</button>
+                        <button id="ai-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable5('AI & Expert System', 5, this)">AI & Expert System</button>
+                        <button id="Software_engg-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable5('Software Engineering', 5, this)">Software Engineering</button>
+                        <button id="ADA-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable5('Analysis And Design Of Algorithm', 5, this)">Analysis And Design Of Algorithm</button>
                     </div>
+                </div>
 
-                    <!-- Tab content -->
-                    <div id="sem5_networks_notes" class="tabcontent" style="display:block;">
+                    <table id="notes-table5" class="table table-hover table-responsive">
+                        <thead>
+                            <tr>
+                                <th>File Name</th>
+                                <th class="d-none">Department</th>
+                                <th class="d-none">Semester</th>
+                                <th >Subject</th>
+                                <th>View</th>
+                                <th>Download</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($notes as $note)
+                                <tr>
+                                    <td data-label="File Name">{{ $note->file_name }}</td>
+                                    <td data-label="Department" class="d-none">{{ $note->department }}</td>
+                                    <td data-label="Semester" class="d-none">{{ $note->semester }}</td>
+                                    <td data-label="Subject" >{{ $note->subject }}</td>
+                                    <td data-label="view">
+                                        <a href="{{ url($note->file_path) }}" target="_blank" class="btn btn-success display-4 " style="white-space: nowrap;">view</a>
+                                    </td>
+                                    <td data-label="download">
+                                        <a href="{{ url($note->file_path) }}" download="{{ $note->file_name }}" class="btn btn-success display-4" style="white-space: nowrap;">Download</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
 
-                       <script> //define some CSV data
-                            var csvData = `"noun", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "pronnoun", "20/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "verb", "27/12/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
+                    <script>
+                        function filterTable5(subject, semester, currentTab) {
+                            var table = document.getElementById("notes-table5");
+                            var rows = table.getElementsByTagName("tr");
 
-                            //define table
-                            var table = new Tabulator("#sem5_networks_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
+                            for (var i = 1; i < rows.length; i++) {
+                                var row = rows[i];
+                                var cells = row.getElementsByTagName("td");
+                                var noteSubject = cells[3].innerText;
+                                var noteSemester = cells[2].innerText;
 
-                                }}
+                                var showRow = true;
 
+                                // Filter by subject
+                                if (subject && noteSubject.toLowerCase() !== subject.toLowerCase()) {
+                                    showRow = false;
+                                }
 
+                                // Filter by semester
+                                if (noteSemester.trim() !== semester.toString()) {
+                                    showRow = false;
+                                }
 
-                                ]
-                            });
-                        </script>
+                                if (showRow) {
+                                    row.style.display = "";
+                                } else {
+                                    row.style.display = "none";
+                                }
+                            }
 
-                    </div>
-
-                    <div id="sem5_java_notes" class="tabcontent">
-
-                       <script> //define some CSV data
-                            var csvData = `"matrix", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "calculus", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "statistics", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem5_java_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem5_graphics_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"chapter 1", "26/09/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "chapter 2", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "book", "26/10/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem5_graphics_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
+                            // Set active tab
+                            var tablinks = document.getElementsByClassName("tablinks");
+                            for (var i = 0; i < tablinks.length; i++) {
+                                tablinks[i].classList.remove("active");
+                            }
+                            currentTab.classList.add("active");
+                        }
+                    </script>
 
                     </div>
-
-                    <div id="sem5_ai_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"truss", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "bridges", "289/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "force", "30/02/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem5_ai_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem5_software_engineering_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"classes", "26/10/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "objects", "25/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "basics", "26/12/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem5_software_engineering_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem5_ada_notes" class="tabcontent">
-
-                       <script> //define some CSV data
-                            var csvData = `"3d design", "23/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "2d design", "25/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "parallel spaces", "26/11/2023","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem5_ada_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                        </div>
-        </div>
+    </div>
     </div>
 </section>
 
-<section data-bs-version="5.1" class="tabs content18 cid-tET2eV8bEP" id="tabs1-6s">
+<section data-bs-version="5.1" class="tabs content18 cid-tET2eV8bEP" id="tabs1-16">
 
 
 
@@ -1278,244 +652,101 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
-                <h3 class="mbr-section-title mb-0 mbr-fonts-style display-2"><strong> Semester VI</strong></h3>
+                <h3 class="mbr-section-title mb-0 mbr-fonts-style display-2"><strong>Semester VI</strong></h3>
 
             </div>
         </div>
         <div class="row justify-content-center mt-4">
-            <div class="col-12 col-md-8">
-              <script>
-                function openSubject(evt, subjectName) {
-                    // Declare all variables
-                    var i, tabcontent, tablinks;
+            <div div class="col-12 col-md-8">
 
-                    // Get all elements with class="tabcontent" and hide them
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
+                <script> src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-                    // Get all elements with class="tablinks" and remove the class "active"
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-
-                    // Show the current tab, and add an "active" class to the button that opened the tab
-                    document.getElementById(subjectName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                    }
-              </script>
-              <!-- Tab links -->
-
+                <div id="filter-container6"  >
                     <div class="tab">
-                        <button class="tablinks active" onclick="openSubject(event, 'sem6_ajava_notes')">Advance JAVA</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem6_dos_notes')"> Distributed Operating Systems </button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem6_compiler_design_notes')">Compiler Design</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem6_linux_notes')">Linux Administration </button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem6_mining_notes')">Data Mining and Warehousing</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem6_modeling_notes')">Modeling and Simulation</button>
+
+                        <button id="dos-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable6('Distributed Operating System', 6, this)">Distributed Operating System</button>
+                        <button id="advancejava-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable6('Advance JAVA', 6, this)">Advance JAVA</button>
+                        <button id="compiler-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable6('Compiler Design', 6, this)">Compiler Design</button>
+                        <button id="linux-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable6('Linux Administration', 6, this)">Linux Administration</button>
+                        <button id="datamining-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable6('Data Mining And Warehousing', 6, this)">Data Mining And Warehousing</button>
+                        <button id="modeling-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable6('Modelling and Simulation', 6, this)">Modelling and Simulation</button>
                     </div>
+                </div>
 
-                    <!-- Tab content -->
-                    <div id="sem6_ajava_notes" class="tabcontent" style="display:block;">
+                    <table id="notes-table6" class="table table-hover table-responsive">
+                        <thead>
+                            <tr>
+                                <th>File Name</th>
+                                <th class="d-none">Department</th>
+                                <th class="d-none">Semester</th>
+                                <th >Subject</th>
+                                <th>View</th>
+                                <th>Download</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($notes as $note)
+                                <tr>
+                                    <td data-label="File Name">{{ $note->file_name }}</td>
+                                    <td data-label="Department" class="d-none">{{ $note->department }}</td>
+                                    <td data-label="Semester" class="d-none">{{ $note->semester }}</td>
+                                    <td data-label="Subject" >{{ $note->subject }}</td>
+                                    <td data-label="view">
+                                        <a href="{{ url($note->file_path) }}" target="_blank" class="btn btn-success display-4 " style="white-space: nowrap;">view</a>
+                                    </td>
+                                    <td data-label="download">
+                                        <a href="{{ url($note->file_path) }}" download="{{ $note->file_name }}" class="btn btn-success display-4" style="white-space: nowrap;">Download</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
 
-                       <script> //define some CSV data
-                            var csvData = `"noun", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "pronnoun", "20/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "verb", "27/12/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
+                    <script>
+                        function filterTable6(subject, semester, currentTab) {
+                            var table = document.getElementById("notes-table6");
+                            var rows = table.getElementsByTagName("tr");
 
-                            //define table
-                            var table = new Tabulator("#sem6_ajava_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
+                            for (var i = 1; i < rows.length; i++) {
+                                var row = rows[i];
+                                var cells = row.getElementsByTagName("td");
+                                var noteSubject = cells[3].innerText;
+                                var noteSemester = cells[2].innerText;
 
-                                }}
+                                var showRow = true;
 
+                                // Filter by subject
+                                if (subject && noteSubject.toLowerCase() !== subject.toLowerCase()) {
+                                    showRow = false;
+                                }
 
+                                // Filter by semester
+                                if (noteSemester.trim() !== semester.toString()) {
+                                    showRow = false;
+                                }
 
-                                ]
-                            });
-                        </script>
+                                if (showRow) {
+                                    row.style.display = "";
+                                } else {
+                                    row.style.display = "none";
+                                }
+                            }
 
-                    </div>
-
-                    <div id="sem6_dos_notes" class="tabcontent">
-
-                       <script> //define some CSV data
-                            var csvData = `"matrix", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "calculus", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "statistics", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem6_dos_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem6_compiler_design_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"chapter 1", "26/09/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "chapter 2", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "book", "26/10/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem6_compiler_design_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
+                            // Set active tab
+                            var tablinks = document.getElementsByClassName("tablinks");
+                            for (var i = 0; i < tablinks.length; i++) {
+                                tablinks[i].classList.remove("active");
+                            }
+                            currentTab.classList.add("active");
+                        }
+                    </script>
 
                     </div>
-
-                    <div id="sem6_linux_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"truss", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "bridges", "289/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "force", "30/02/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem6_linux_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem6_mining_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"classes", "26/10/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "objects", "25/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "basics", "26/12/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem6_mining_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem6_modeling_notes" class="tabcontent">
-
-                       <script> //define some CSV data
-                            var csvData = `"3d design", "23/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "2d design", "25/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "parallel spaces", "26/11/2023","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem6_modeling_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                        </div>
-        </div>
+    </div>
     </div>
 </section>
 
-<section data-bs-version="5.1" class="tabs content18 cid-tET2eV8bEP" id="tabs1-7s">
+<section data-bs-version="5.1" class="tabs content18 cid-tET2eV8bEP" id="tabs1-17">
 
 
 
@@ -1529,238 +760,96 @@
             </div>
         </div>
         <div class="row justify-content-center mt-4">
-            <div class="col-12 col-md-8">
-              <script>
-                function openSubject(evt, subjectName) {
-                    // Declare all variables
-                    var i, tabcontent, tablinks;
+            <div div class="col-12 col-md-8">
 
-                    // Get all elements with class="tabcontent" and hide them
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
+                <script> src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-                    // Get all elements with class="tablinks" and remove the class "active"
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-
-                    // Show the current tab, and add an "active" class to the button that opened the tab
-                    document.getElementById(subjectName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                    }
-              </script>
-              <!-- Tab links -->
-
+                <div id="filter-container7"  >
                     <div class="tab">
-                        <button class="tablinks active" onclick="openSubject(event, 'sem7_advance_commputer_architecture_notes')">Advance Computer Architecture</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem7_mobile_computing_notes')"> Wireless and Mobile Computing</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem7_information_security_notes')">Information Security</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem7_cloud_computing_notes')">Cloud Computing</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem7_mis_notes')">Management Information System</button>
-                        <button class="tablinks" onclick="openSubject(event, 'sem7_multimedia_notes')">Multimedia Technology</button>
+
+                        <button id="aca-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable7('Advance Computer Architecture', 7, this)">Advance Computer Architecture</button>
+                        <button id="mobile_computing-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable7('Wireless And Mobile Computing', 7, this)">Wireless And Mobile Computing</button>
+                        <button id="information_security-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable7('Information Security', 7, this)">Information Security</button>
+                        <button id="cloud-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable7('Cloud Computing', 7, this)">Cloud Computing</button>
+                        <button id="mis-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable7('Management Information System', 7, this)">Management Information System</button>
+                        <button id="multimedia-tab" type="button" class="btn btn-info display-4" data-bs-toggle="button" autocomplete="off" onclick="filterTable7('Multimedia Technology', 7, this)">Multimedia Technology</button>
                     </div>
+                </div>
 
-                    <!-- Tab content -->
-                    <div id="sem7_advance_commputer_architecture_notes" class="tabcontent" style="display:block;">
+                    <table id="notes-table7" class="table table-hover table-responsive">
+                        <thead>
+                            <tr>
+                                <th>File Name</th>
+                                <th class="d-none">Department</th>
+                                <th class="d-none">Semester</th>
+                                <th >Subject</th>
+                                <th>View</th>
+                                <th>Download</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($notes as $note)
+                                <tr>
+                                    <td data-label="File Name">{{ $note->file_name }}</td>
+                                    <td data-label="Department" class="d-none">{{ $note->department }}</td>
+                                    <td data-label="Semester" class="d-none">{{ $note->semester }}</td>
+                                    <td data-label="Subject" >{{ $note->subject }}</td>
+                                    <td data-label="view">
+                                        <a href="{{ url($note->file_path) }}" target="_blank" class="btn btn-success display-4 " style="white-space: nowrap;">view</a>
+                                    </td>
+                                    <td data-label="download">
+                                        <a href="{{ url($note->file_path) }}" download="{{ $note->file_name }}" class="btn btn-success display-4" style="white-space: nowrap;">Download</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
 
-                       <script> //define some CSV data
-                            var csvData = `"noun", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "pronnoun", "20/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "verb", "27/12/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
+                    <script>
+                        function filterTable7(subject, semester, currentTab) {
+                            var table = document.getElementById("notes-table7");
+                            var rows = table.getElementsByTagName("tr");
 
-                            //define table
-                            var table = new Tabulator("#sem7_advance_commputer_architecture_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
+                            for (var i = 1; i < rows.length; i++) {
+                                var row = rows[i];
+                                var cells = row.getElementsByTagName("td");
+                                var noteSubject = cells[3].innerText;
+                                var noteSemester = cells[2].innerText;
 
-                                }}
+                                var showRow = true;
 
+                                // Filter by subject
+                                if (subject && noteSubject.toLowerCase() !== subject.toLowerCase()) {
+                                    showRow = false;
+                                }
 
+                                // Filter by semester
+                                if (noteSemester.trim() !== semester.toString()) {
+                                    showRow = false;
+                                }
 
-                                ]
-                            });
-                        </script>
+                                if (showRow) {
+                                    row.style.display = "";
+                                } else {
+                                    row.style.display = "none";
+                                }
+                            }
 
-                    </div>
-
-                    <div id="sem7_mobile_computing_notes" class="tabcontent">
-
-                       <script> //define some CSV data
-                            var csvData = `"matrix", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "calculus", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "statistics", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem7_mobile_computing_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem7_information_security_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"chapter 1", "26/09/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "chapter 2", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "book", "26/10/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem7_information_security_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
+                            // Set active tab
+                            var tablinks = document.getElementsByClassName("tablinks");
+                            for (var i = 0; i < tablinks.length; i++) {
+                                tablinks[i].classList.remove("active");
+                            }
+                            currentTab.classList.add("active");
+                        }
+                    </script>
 
                     </div>
-
-                    <div id="sem7_cloud_computing_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"truss", "26/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "bridges", "289/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "force", "30/02/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem7_cloud_computing_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem7_mis_notes" class="tabcontent">
-
-                        <script> //define some CSV data
-                            var csvData = `"classes", "26/10/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "objects", "25/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "basics", "26/12/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem7_mis_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                    <div id="sem7_multimedia_notes" class="tabcontent">
-
-                       <script> //define some CSV data
-                            var csvData = `"3d design", "23/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "2d design", "25/11/2022","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"
-                             "parallel spaces", "26/11/2023","https://1drv.ms/b/s!Ao5mnlFEn5kDZu-km_vQTYSAba0?e=ZeqOIl"`;
-
-                            //define table
-                            var table = new Tabulator("#sem7_multimedia_notes", {
-                                data:csvData,
-                                importFormat:"csv",
-                                layout:"fitColumns",
-                                responsiveLayout:true,
-                                columns:[
-                                {title:"Name", field:"Name", formatter:"plaintext" ,responsive:0},
-                                {title:"Date", field:"Date", formatter:"plaintext" , responsive:3},
-                                {title:"Download url", field:"Download url",responsive:0, formatter:"link", formatterParams:{
-                                    labelField:"Download url",
-                                    label: "click here to download",
-                                    download:true,
-                                    target:"_blank",
-
-                                }}
-
-
-
-                                ]
-                            });
-                        </script>
-
-                    </div>
-
-                        </div>
-        </div>
+    </div>
     </div>
 </section>
 
+
 <script src="{{ url('frontend/assets/mbr-tabs/mbr-tabs.js') }}"></script>
-<script type="text/javascript" src="{{ url('frontend/assets/dist/js/tabulator.min.js')}}"></script>
-@endsection
+
+@include('frontend.layouts.footer')

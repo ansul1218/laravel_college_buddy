@@ -144,7 +144,7 @@
                 <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
                     <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler"
                         data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true"
-                            value="245pgOlToHdKKP84sDtQ+TT7wTRdY+dpNGE6c30Tzt33U8h1zqiGf/mYHOUg0fLeA+WILmeyw7VTUaKDxH468SCCZH/6rGZ17dWmr+G3nnfx9oRup0SwPDaQbrgH9XZ1">
+                            value="245pgOlToHdKKP84sDtQ+TT7wTRdY+dpNGE6c30Tzt33U8h1zqiGf/mYHOUg0fLeA+WILmeyw7VTUaKDxH468SCCZH/6rGZ17dWmr+G3nnfx9oRup0SwPDaQbrgH9XZ1" >
                         <div class="row">
                             <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling
                                 out the form!</div>
@@ -164,11 +164,11 @@
                             </div>
                             <div class="col-md col-12 form-group mb-3" data-for="name">
                                 <input type="text" name="name" placeholder="Name" data-form-field="Name"
-                                    class="form-control" id="name-form1-q">
+                                    class="form-control" id="name-form1-q" required maxlength="30">
                             </div>
                             <div class="col-md col-12 form-group mb-3" data-for="email">
                                 <input type="email" name="email" placeholder="Email" data-form-field="Email"
-                                    class="form-control" id="email-form1-q">
+                                    class="form-control" id="email-form1-q"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                             </div>
                             <div class="mbr-section-btn col-12 col-md-auto"><button type="submit"
                                     class="btn btn-success display-4">Subscribe</button></div>

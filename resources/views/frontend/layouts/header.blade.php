@@ -12,6 +12,7 @@
     <title>Home</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8564026529063912"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{{ url('/resources/js/app.js') }}">
     <link rel="stylesheet" href="{{ url('frontend/assets/web/assets/mobirise-icons2/mobirise2.css') }}">
     <link rel="stylesheet" href="{{ url('frontend/assets/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url('frontend/assets/bootstrap/css/bootstrap-grid.min.css') }}">
@@ -30,14 +31,14 @@
     </noscript>
     <link rel="preload" as="style" href="{{ url('frontend/assets/mobirise/css/mbr-additional.css') }}">
     <link rel="stylesheet" href="{{ url('frontend/assets/mobirise/css/mbr-additional.css') }}" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 
 
 
 </head>
-
-<body>
-
+<body  >
     <section data-bs-version="5.1" class="menu cid-s48OLK6784" once="menu" id="menu1-h">
 
         <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
@@ -75,38 +76,38 @@
                                 data-bs-auto-close="outside" aria-expanded="false">Notes</a>
                             <div class="dropdown-menu" aria-labelledby="dropdown-529"><a
                                     class="text-black dropdown-item text-primary display-4"
-                                    href="{{url('/Notes#tabs1-1s')}}">Semester I</a><a
+                                    href="{{url('/Notes-files#tabs1-11')}}">Semester I</a><a
                                     class="text-black show dropdown-item text-primary display-4"
-                                    href="{{url('/Notes#tabs1-25')}}">Semester II</a><a
+                                    href="{{url('/Notes-files#tabs1-12')}}">Semester II</a><a
                                     class="text-black show dropdown-item text-primary display-4"
-                                    href="{{url('/Notes#tabs1-2b')}}">Semester III</a><a
+                                    href="{{url('/Notes-files#tabs1-13')}}">Semester III</a><a
                                     class="text-black show dropdown-item text-primary display-4"
-                                    href="{{url('/Notes#tabs1-26')}}">Semester IV</a><a
+                                    href="{{url('/Notes-files#tabs1-14')}}">Semester IV</a><a
                                     class="text-black show dropdown-item text-primary display-4"
-                                    href="{{url('/Notes#tabs1-2a')}}">Semester V</a><a
+                                    href="{{url('/Notes-files#tabs1-15')}}">Semester V</a><a
                                     class="text-black show dropdown-item text-primary display-4"
-                                    href="{{url('/Notes#tabs1-29')}}">Semester VI</a><a
+                                    href="{{url('/Notes-files#tabs1-16')}}">Semester VI</a><a
                                     class="text-black show dropdown-item text-primary display-4"
-                                    href="{{url('/Notes#tabs1-28')}}">Semester VII</a></div>
+                                    href="{{url('/Notes-files#tabs1-17')}}">Semester VII</a></div>
                         </li>
                         <li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle display-4"
                                 href="{{url('/Paper')}}" data-toggle="dropdown-submenu" data-bs-toggle="dropdown"
                                 data-bs-auto-close="outside" aria-expanded="false">Papers</a>
                             <div class="dropdown-menu" aria-labelledby="dropdown-247"><a
                                     class="text-black dropdown-item text-primary display-4"
-                                    href="{{url('/Papers#tabs1-2d')}}">Semester I</a><a
+                                    href="{{url('/Papers-files#tabs1-21')}}">Semester I</a><a
                                     class="text-black show dropdown-item text-primary display-4"
-                                    href="{{url('/Papers#tabs1-2e')}}">Semester II</a><a
+                                    href="{{url('/Papers-files#tabs1-22')}}">Semester II</a><a
                                     class="text-black show dropdown-item text-primary display-4"
-                                    href="{{url('/Papers#tabs1-2f')}}">Semester III</a><a
+                                    href="{{url('/Papers-files#tabs1-23')}}">Semester III</a><a
                                     class="text-black show dropdown-item text-primary display-4"
-                                    href="{{url('/Papers#tabs1-2g')}}">Semester IV</a><a
+                                    href="{{url('/Papers-files#tabs1-24')}}">Semester IV</a><a
                                     class="text-black show dropdown-item text-primary display-4"
-                                    href="{{url('/Papers#tabs1-2h')}}">Semester V</a><a
+                                    href="{{url('/Papers-files#tabs1-25')}}">Semester V</a><a
                                     class="text-black show dropdown-item text-primary display-4"
-                                    href="{{url('/Papers#tabs1-2i')}}">Semester VI</a><a
+                                    href="{{url('/Papers-files#tabs1-26')}}">Semester VI</a><a
                                     class="text-black show dropdown-item text-primary display-4"
-                                    href="{{url('/Papers#tabs1-2j')}}">Semester VII</a></div>
+                                    href="{{url('/Papers-files#tabs1-27')}}">Semester VII</a></div>
                         </li>
                     </ul>
 

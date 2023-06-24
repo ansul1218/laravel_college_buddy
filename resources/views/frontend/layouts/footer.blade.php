@@ -13,7 +13,7 @@
 
 
 
-                    <li class="foot-menu-item mbr-fonts-style display-7"><a href="studylist.html#content13-1n"
+                    <li class="foot-menu-item mbr-fonts-style display-7"><a href="https://forms.gle/PQRkvR5CUvJCtndF7"
                             class="text-primary" target="_blank">suggestions</a></li>
                     <li class="foot-menu-item mbr-fonts-style display-7"><a href="mailto:ansul1218@gmail.com"
                             class="text-primary">email</a></li>

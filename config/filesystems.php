@@ -37,9 +37,11 @@ return [
         ],
 
         'public' => [
+
+
             'driver' => 'local',
-            'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'root' => public_path('notes'),
+            'url' => env('APP_URL').'/notes',
             'visibility' => 'public',
             'throw' => false,
         ],
@@ -70,7 +72,7 @@ return [
     */
 
     'links' => [
-        public_path('storage') => storage_path('app/public'),
+        public_path('storage') => storage_path('app/public/notes'),
     ],
 
 ];
